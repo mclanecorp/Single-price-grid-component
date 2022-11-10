@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Manrope:wght@500;700&family=Overpass&family=Poppins:wght@200;400;500;600;700&display=swap");
+
+:root {
+  /* ### Primary */
+
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+
+  /* ### Neutral */
+
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Karla;
+  font-size: 1rem;
+  background-color: var(--LightGray);
+  display: grid;
+  place-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 2px 6px 22px 4px #a3a3a3;
+  box-shadow: 2px 6px 22px 4px #a3a3a3;
+  border-radius: 10px 10px 10px 10px;
+}
+.community {
+  background-color: white;
+  padding: 30px;
+  padding-right: 90px;
+  width: 650px;
+  border-radius: 10px 10px 0 0;
+}
+.community h1 {
+  color: var(--Cyan);
+  margin-bottom: 20px;
+}
+
+.community h3 {
+  color: var(--BrightYellow);
+  margin-bottom: 10px;
+}
+.community p {
+  color: var(--GrayishBlue);
+  line-height: 25px;
+}
+
+.wrapper {
+  display: flex;
+  color: white;
+}
+.wrapper .subscription {
+  background-color: #2bb3b1;
+  width: 325px;
+  border-radius: 0 0 0 10px;
+  padding: 30px;
+}
+
+.wrapper .subscription h3 {
+  margin-bottom: 50px;
+}
+
+.wrapper .subscription span {
+  position: relative;
+  bottom: 5px;
+  font-weight: 400;
+  color: var(--LightGray);
+  opacity: 0.5;
+  font-size: 16px;
+}
+
+.wrapper .subscription .dollars {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.wrapper .subscription p {
+  margin-bottom: 50px;
+  margin-top: -30px;
+  color: var(--LightGray);
+  font-weight: 400;
+}
+
+.wrapper .subscription a {
+  padding: 10px 90px;
+  border-radius: 10px;
+  background-color: #bfdf32;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  -webkit-box-shadow: 2px 6px 22px 4px #a3a3a3;
+  box-shadow: 2px 6px 22px 4px #a3a3a39b;
+}
+
+.wrapper .why {
+  width: 328px;
+  background-color: #4abebd;
+  border-radius: 0 0 10px 0;
+  padding: 30px;
+}
+
+.why p {
+  margin-top: 20px;
+  color: #eeeef1;
+  line-height: 20px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    padding: 10px;
+  }
+  .community {
+    width: 325px;
+    padding: 20px;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .wrapper .subscription {
+    border-radius: 0 0 0 0;
+  }
+
+  .wrapper .why {
+    border-radius: 0 0 10px 10px;
+    width: 325px;
+  }
+}
